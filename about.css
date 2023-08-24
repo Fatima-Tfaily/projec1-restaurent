@@ -7,6 +7,16 @@ body {
     font-family: sans-serif;
 }
 
+.mission {
+    transform: skewY(-5deg);
+    background-color: #f0f0f0;
+    height: 500px;
+}
+
+.mission1 {
+    transform: skewY(5deg);
+}
+
 .part1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/hero_2.jpg");
     background-size: cover;
