@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
@@ -101,6 +101,11 @@ a:hover {
     background-position: center;
     color: white;
     text-align: center;
+}
+
+.contact:hover {
+    background-color: white;
+    color: orange;
 }
 
 .menu1:hover,
@@ -398,6 +403,7 @@ hr {
 
 .image-container {
     display: flex;
+    margin: auto;
 }
 
 .image4 {
@@ -409,9 +415,8 @@ hr {
 .image-container {
     display: inline-flex;
     justify-content: center;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 40px;
-    margin-left: 30%;
 }
 
 .subscribe-container {
@@ -599,7 +604,11 @@ hr {
 ul {
     list-style-type: none;
 }
-
+.content h1{
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+}
 .blog {
     width: 30%;
     height: fit-content;
@@ -651,7 +660,35 @@ h2 {
 
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
+.navbar {
+    background-color: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f39c12;
+}
 
 .P5 {
 
@@ -684,7 +721,18 @@ img {
     margin-right: 50px;
     margin-left: 10px;
 }
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
 .image li {
     margin-top: 10px;
 
@@ -695,15 +743,15 @@ img {
     color: black;
 }
 
-.newsletter p {
-    margin-left: 25%;
+.newsletter {
+    text-align: left;
 }
 
 @media screen and (max-width: 700px) {
     * {
         padding: 0;
-        margin: 0;
-    }
+        margin: 0;}
+    
 
     body {
         width: 100%;
@@ -717,23 +765,21 @@ img {
     }
 
     .t3 h4 {
-        width: 200px;
-        font-size: 20px;
+        width: 160px;
+        font-size: 18px;
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
     }
 
     .t3 p {
-        width: 200px;
-        font-size: 20px;
-        margin: auto;
+        width: 160px;
+        font-size: 15px;
         margin-top: 0px;
-        padding-left: 0px;
+        padding-left: 10px;
     }
-
     .part4 {
         width: 100%;
-        height: 1800px;
+        height: 1500px;
         background-color: #f0f0f0;
 
     }
@@ -756,17 +802,20 @@ img {
         display: block;
         width: fit-content;
         margin: auto;
-        margin-left: 0px;
+    }
+
+    .content {
+        display: none;
     }
 
     .t3 {
-        width: 200px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
     }
 
     .t3 img {
-        width: 200px;
-        height: 200px;
+        width: 170px;
+        height: 170px;
     }
 
 
@@ -784,7 +833,7 @@ img {
     }
 
     .P5 {
-        height: 1600px;
+        height: 1400px;
         padding: center;
     }
 
@@ -807,7 +856,7 @@ img {
         color: orange;
         letter-spacing: 0px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 0px;
         padding-left: 0px;
         margin-left: 0px;
@@ -818,17 +867,16 @@ img {
     .c p {
         line-height: 1.3;
         color: gray;
-        margin-top: -10px;
-        font-size: 20px;
+        font-size: 18px;
         margin-right: 0px;
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-top: 20px;
+        margin-left: 5px;
         height: 200px;
         width: fit-content;
         padding-right: 0px;
         margin-left: 0;
         padding-left: 0px;
-        text-align: center;
+        text-align: left;
     }
 
     .part2 {
@@ -845,7 +893,7 @@ img {
 
     .image {
         margin: auto;
-        width: 100%;
+        width: 90%;
         height: 50%;
         font-size: 20px;
     }
@@ -903,8 +951,8 @@ img {
 
 
     .h li {
-        width: 50;
-        height: 50;
+        width: 40px;
+        height: 40px;
         margin-left: 0px;
         margin-right: none;
         font-size: 25;
@@ -913,13 +961,13 @@ img {
 
     .h {
         display: none;
-        margin: right;
         margin-bottom: 50px;
+        margin-left: 15rem;
     }
 
     .contact {
 
-        width: 150px;
+        width: 100px;
         height: 50px;
         background-color: #FF7415;
         border: 0px;
@@ -927,7 +975,7 @@ img {
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 70px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .contact button {
@@ -962,12 +1010,9 @@ img {
     }
 
     .paragraph {
-        font-size: medium;
-        text-align: right;
-    }
-
-    .image-container {
-        margin-left: 10%;
+        font-size: 20px;
+        text-align: left;
+        margin: auto;
     }
 
     .container3 p {
@@ -977,23 +1022,29 @@ img {
 
 
     .image1,
-    .image2,
-    .image3,
     .image4 {
-        width: 100%;
-        height: 30%;
-        margin-left: 0px;
+        width: 100px;
+        height: 200px;
+        margin-left: 5px;
+    }
+
+    .image2,
+    .image3 {
+        width: 100px;
+        height: 90px;
+        margin-left: 5px;
+        margin-right: 5px;
         margin-bottom: 5px;
     }
 
     .image-container {
-        display: block;
+        display: flex;
         width: 100%;
         margin-left: 0px;
     }
 
     .special {
-        height: 1500px;
+        height: 1300px;
     }
 
     .special ul {
@@ -1002,7 +1053,7 @@ img {
     }
 
     .special h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .special li {
@@ -1013,20 +1064,21 @@ img {
 
     .price {
         margin-top: 100%;
-        font-size: 30;
+        font-size: 18px;
         width: 100px;
         height: 100px;
     }
 
     .ingredients {
         margin-top: 2%;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .menu1,
     .menu2,
     .menu3 {
-        margin-top: 30%;
+        width: 70%;
+        margin: auto;
     }
 
     .co h1 {
@@ -1096,19 +1148,38 @@ img {
 
     .newsletter p {
         font-size: 20px;
-        margin-left: 5%;
+        margin: auto;
     }
 
     .email-input {
         width: 50%;
         height: 50px;
-        font-size: 20px;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .subscribe-container {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
     }
 
     .subscribe-button {
-        width: 30%;
+        width: 35%;
         height: 50px;
-        font-size: 20px;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .part1,
+    .menu,
+    .m,
+    .title {
+        width: 100%;
+    }
+
+    .h {
+        width: fit-content;
     }
 
     .container61 {
@@ -1149,8 +1220,7 @@ img {
 
     .quick-links li {
         font-size: 20px;
-    }
-}
+    }}
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     * {
@@ -1181,7 +1251,7 @@ img {
     }
 
     h1 {
-        font-size: 40;
+        font-size: 30px;
     }
 
     .c {
@@ -1202,7 +1272,7 @@ img {
     .c h5 {
         color: orange;
         letter-spacing: 0px;
-        font-size: 40;
+        font-size: 30px;
         margin-top: 0px;
         padding-left: 0px;
     }
@@ -1216,7 +1286,7 @@ img {
         line-height: 1.3;
         color: gray;
         margin-top: -10px;
-        font-size: 30;
+        font-size: 25px;
         margin-right: 0px;
         margin-top: 10px;
         margin-right: 0px;
@@ -1249,7 +1319,7 @@ img {
     }
 
     .part1 h3 {
-        font-size: 100;
+        font-size: 30px;
     }
 
     .container123 {
@@ -1260,12 +1330,6 @@ img {
         transform-origin: top left;
     }
 
-    .cont {
-        transform: skewY(5deg);
-        transform-origin: top left;
-        margin-left: 10%;
-    }
-
     .title h3 {
         height: 20px;
     }
@@ -1273,36 +1337,44 @@ img {
 
 
     .part1 li {
-        font-size: 35;
+        font-size: 25px;
         display: block;
     }
 
 
 
     .h li {
-        width: 100;
-        height: 100;
+        width: 50px;
+        height: 30px;
         margin-left: 0px;
-        font-size: 35;
+        font-size: 20px;
+        margin-bottom: 20px;
 
     }
 
     .h {
         display: block;
         margin-left: 600px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
+    .cont {
+        transform: skewY(5deg);
+        transform-origin: top left;
+        margin-left: 10%;
+    }
+
+
     li .contact {
-        height: 50px;
-        width: 200px;
+        height: 30px;
+        width: 150px;
         background-color: #FF7415;
         border: 0px;
         color: white;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 70px;
-        font-size: 25;
+        margin-bottom: 0px;
+        font-size: 20px;
     }
 
     .contact button {
@@ -1312,7 +1384,7 @@ img {
     .container3 .paragraph1 {
         width: 90%;
         margin-left: 0%;
-        font-size: 35;
+        font-size: 25px;
     }
 
     .cont {
@@ -1325,11 +1397,11 @@ img {
     }
 
     .container3 h1 {
-        font-size: 50;
+        font-size: 30px;
     }
 
     .image-container {
-        margin-left: 10%;
+        margin-left: 0%;
     }
 
     .image1,
@@ -1341,11 +1413,11 @@ img {
     .image2,
     .image3 {
         width: 200px;
-        height: 120px;
+        height: 140px;
     }
 
     .special {
-        height: 2000px;
+        height: 1700px;
     }
 
     .special ul {
@@ -1354,7 +1426,7 @@ img {
     }
 
     .special h1 {
-        font-size: 50;
+        font-size: 25px;
     }
 
     .special li {
@@ -1365,25 +1437,27 @@ img {
 
     .price {
         margin-top: 100%;
-        font-size: 30;
+        font-size: 25px;
         width: 150px;
         height: 150px;
     }
 
     .ingredients {
         margin-top: 2%;
-        font-size: 30;
+        font-size: 25px;
     }
 
     .menu1,
     .menu2,
     .menu3 {
+        width: 50%;
+        height: 300px;
         margin-top: 30%;
         font-size: medium;
     }
 
     .co h1 {
-        font-size: 50;
+        font-size: 30px;
 
     }
 
@@ -1392,7 +1466,7 @@ img {
     }
 
     .paragraph {
-        font-size: 35;
+        font-size: 25px;
         margin-left: 5%;
         width: 90%
     }
@@ -1400,7 +1474,6 @@ img {
     footer img {
         width: 100px;
         height: 100px;
-        margin-left: 60%;
     }
 
     .chef {
@@ -1441,7 +1514,7 @@ img {
 
     .part4 {
         width: 100%;
-        height: 3000px;
+        height: 2600px;
         background-color: #f0f0f0;
 
     }
@@ -1455,16 +1528,20 @@ img {
     }
 
     .t3 {
-        width: 350px;
-        height: 350px;
-        font-size: 30;
-        text-align: center;
+        width: 300px;
+        height: 300px;
+        font-size: 25px;
+        text-align: left;
     }
 
+    .t3 h4,
+    .t3 p {
+        margin-left: 10px;
+    }
 
     .t3 img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 
     .t1 {
@@ -1481,22 +1558,31 @@ img {
     }
 
     .P5 {
-        height: 1700px;
+        height: 1200px;
         padding: center;
+    }
+
+    .chef {
+        width: fit-content;
     }
 
     .image {
         margin: auto;
-        width: 700px;
-        height: 700px;
-        font-size: 35;
+        width: 50%;
+        height: fit-content;
+        font-size: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        weight: 250px;
     }
 
     .P5 button {
-        width: 200px;
-        height: 70px;
+        width: 100px;
+        height: 50px;
         background-color: #FF7415;
-        font: 20;
+        font: 20px;
     }
 
     li img {
@@ -1554,4 +1640,74 @@ img {
         align-items: center;
 
     }
-}
+
+    .opening-hours p {
+        font-size: 18px;
+    }
+
+    .contact-info h4 {
+        font-size: 25px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+    }
+
+    .quick-links li {
+        font-size: 18px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+        width: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .container61 {
+        font-size: 18px;
+        display: block;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .email-input {
+        width: 50%;
+        height: 50px;
+        font-size: 15px;
+        padding: 0px;
+        margin: 0%;
+    }
+
+    .subscribe-button {
+        width: 40%;
+        height: 50px;
+        font-size: 15px;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .container61 {
+        margin-top: 30px;
+    }
+
+    .about-us,
+    .opening-hours,
+    .contact-info,
+    .quick-links {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .about-us h4,
+    .opening-hours h4,
+    .contact-info h4,
+    .quick-links h4 {
+        font-size: 20px;
+    }
+
+}*/

@@ -6,22 +6,67 @@
 body {
     font-family: sans-serif;
 }
-
+.content h1{
+    width: 50%;
+    margin: auto;
+    margin-top: 15%;
+}
 .mission {
     transform: skewY(-5deg);
     background-color: #f0f0f0;
     height: 500px;
 }
 
-.mission1 {
+.chef {
+    transform: skewY(-5deg);
+    background-color: white;
+    height: 600px;
+}
+
+.chef1 {
     transform: skewY(5deg);
 }
 
-.part1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/hero_2.jpg");
-    background-size: cover;
-    background-position: center;
+.faq {
+    transform: skewY(-5deg);
+    background-color: #f0f0f0;
+    height: 600px;
     height: 500px;
+}
+
+.faq1 {
+    transform: skewY(5deg);
+}
+
+.mission1 {
+    transform: skewY(5deg);
+    padding-top: 0%;
+}
+
+.img {
+    padding-top: 0px;
+}
+
+.mission1 h2 {
+    padding-top: 3%;
+    margin-bottom: 3%;
+
+}
+
+.content p {
+    margin-left: 5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+}
+
+.part1 {
     color: white;
 }
 
@@ -29,7 +74,12 @@ body {
     display: flex;
     list-style-type: none;
 }
-
+.mySlides img{
+    height: 700px;
+}
+.header{
+    height:700px;
+}
 .menu {
     padding-top: 20px;
     margin-bottom: 70px;
@@ -46,6 +96,56 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.h {
+    margin-left: 400px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.c {
+    margin-left: 120px;
+}
+
+.title {
+    margin-left: 70px;
+}
+
+a:hover {
+    color: #FF7415;
+}
+
+.content {
+    font-size: 30px;
+    margin-top: 0px;
+
+}
+
+.part1 p {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.get {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.button {
+    text-align: center;
+}
+
 .contact:hover {
     background-color: white;
     color: orange;
@@ -56,9 +156,6 @@ a {
     color: white;
 }
 
-.h {
-    margin-left: 400px;
-}
 
 .menu li {
     margin-right: 20px;
@@ -125,6 +222,10 @@ p {
     text-align: left;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .content h1 {
     margin-bottom: 5px;
 }
@@ -146,6 +247,7 @@ h1 {
 }
 
 .partchef h1 {
+    margin-top: 5%;
     justify-content: center;
     text-align: center;
     font-size: 50px;
@@ -209,26 +311,6 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
@@ -244,22 +326,6 @@ h1 {
 .active,
 .dot:hover {
     background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
 }
 
 .container {
@@ -307,154 +373,414 @@ h1 {
     font-size: 20;
 }
 
-.container61 {
-    display: flex;
+.newsletter h1 {
+    margin-top: 3%;
+    text-align: center;
 }
 
 .newsletter p {
-    text-align: center;
+    margin-left: 30%;
 }
 
-.about-us h4,
-.opening-hours h4,
-.contact-info h4,
-.quick-links h4 {
-    text-align: left;
-    font-size: 30px;
-    width: 100%;
-}
-
-.about-us,
-.opening-hours,
-.contact-info,
-.quick-links {
-    width: 100%;
-}
-
-.quick-links {
-    margin-left: 15%;
-}
-
-.opening-hours,
-.contact-info {
-    margin-left: 20%;
-}
-
-.quick-links ul,
-.contact-info ul {
-    list-style-type: none;
-    margin: 0px;
-}
-
-.quick-links a {
-    color: black;
-}
-
-.about-us p,
-.opening-hours p,
-.contact-info p,
-.quick-links p {
-    font-size: 20px;
-    text-align: left;
-    padding: 0px;
+.contact-info h3 {
+    font-size: 18px;
 }
 
 .subscribe-container {
-    text-align: center;
-    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .email-input {
-    width: 30%;
-    height: 5%;
+    /* Add styles for the email input box */
+    padding: 15px;
+    width: 380px;
+    /* Adjust the width as desired */
+    border: 1px solid #ccc;
+    /* Optional: Rounded corners */
+    font-size: 18px;
+    color: #000;
+    /* Black font color */
+    background-color: #fff;
+    /* White background */
+    margin-right: 20px;
 }
 
 .subscribe-button {
-    width: 10%;
-    height: 5%;
-    background-color: #FF7415;
-    color: white;
-    border: 0px;
+    /* Add styles for the subscribe button */
+    padding: 15px 30px;
+    /* Adjust padding as desired */
+    background-color: rgb(255, 111, 0);
+    /* Orange background */
+    color: #fff;
+    /* White font color */
+    border: none;
+    /* Optional: Rounded corners */
+    font-size: 18px;
+    cursor: pointer;
+    letter-spacing: 3px;
 }
 
+
+
+
+.newsletter {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container6 {
+    display: block;
+    width: 100%;
+}
+
+.container6 p {
+    font-size: 18px;
+}
+
+
+.part6 a:hover {
+    color: grey;
+}
+
+.quick-links li {
+    color: orange;
+}
+
+.part6 a {
+    text-decoration: none;
+    color: rgb(255, 111, 0);
+}
+
+.quick-links {
+    margin-left: 70px;
+}
+
+.quick-links ul {
+    display: block;
+
+}
+
+.quick-links li {
+    width: 300px;
+    height: auto;
+}
+
+.contact-info ul {
+    display: block;
+    width: 300px
+}
+
+.contact-info li {
+    width: 300px;
+    height: auto;
+}
+
+.contact-info p {
+    display: block;
+}
+
+.part6 p {
+    display: flex;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container61 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.container61 p {
+    font-size: 18px;
+}
+
+.about-us {
+    width: 300px;
+    margin-left: 70px;
+}
+
+.img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.opening-hours {
+    width: 300px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.quick-links li {
+    font-size: 18px;
+}
+
+.contact-info p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 18;
+}
+
+.contact-info {
+    font-size: 18;
+    margin-left: 70px;
+}
+
+.content123 img {
+    width: 400px;
+    height: 400px;
+}
+.header {
+    width: 100%;
+    height: 600px;
+}
+
+.part1 {
+    color: white;
+}
+
+.part1 ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu {
+    padding-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.contact {
+    width: 100px;
+    height: 40px;
+    background-color: #FF7415;
+    border: 0px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.h {
+    margin-left: 400px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.c {
+    margin-left: 120px;
+}
+
+.title {
+    margin-left: 70px;
+}
+
+a:hover {
+    color: #FF7415;
+}
+
+.content {
+    font-size: 30px;
+    margin-top: 0px;
+
+}
+
+.part1 p {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.get {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    width: 100px;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.button {
+    text-align: center;
+}
+
+
+.men li {
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+
+}
 @media screen and (max-width: 700px) {
 
     .prev,
     .next {
         color: orange;
-        font-size: 50px;
+        font-size: 10px;
         top: 37%;
     }
 
     .next {
-        margin-left: 94%;
+        margin-left: 90%;
     }
 
-    * {
-        padding: 0;
-        margin: 0;
+    .content123 img {
+        width: 150px;
+        height: 150px;
     }
 
-    body {
-        width: 100%;
-        height: 100%;
+    .namechef h2 {
+        font-size: 15px;
     }
 
-    .part1 {
-        width: 100%;
-        height: 800px
+    .chef {
+        height: 350px;
     }
 
-    .part1 ul {
+    .container61 {
+        font-size: 18px;
         display: block;
     }
 
-    .part1 h3 {
-        font-size: 100;
+    .newsletter p {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 3%;
     }
 
-    .part1 li {
-        font-size: 45;
-        display: block;
+    .email-input {
+        width: 50%;
+        height: 50px;
+        font-size: 15px;
+        padding: 0px;
+        margin: 0%;
     }
 
-
-
-    .h li {
-        width: 100;
-        height: 100;
-        margin-left: 100px;
-        margin-right: none;
-        font-size: 45;
-
+    .subscribe-button {
+        width: 40%;
+        height: 50px;
+        font-size: 15px;
+        padding: 0%;
+        margin: 0%;
     }
 
-    .h {
-        display: none;
-        margin-left: 1500px;
-        margin-bottom: 50px;
+    .container61 {
+        margin-top: 30px;
     }
 
-    .contact {
+    .about-us,
+    .opening-hours,
+    .contact-info,
+    .quick-links {
+        width: 100%;
+        margin-left: 3%;
+    }
 
-        width: 200px;
-        height: 85px;
-        background-color: #FF7415;
-        border: 0px;
-        color: white;
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 70px;
+    .about-us h4,
+    .opening-hours h4,
+    .contact-info h4,
+    .quick-links h4 .oq {
+        font-size: 20px;
+    }
+
+    .chef .title {
+        font-size: 20px;
+    }
+
+    .about-us p {
+        font-size: 18px;
+        width: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mission1 h2 {
+        font-size: 30px;
+    }
+
+    h4 {
         font-size: 25px;
     }
 
-    .contact button {
-        margin-left: 0;
+    .opening-hours p {
+        font-size: 18px;
     }
 
-    .content {
-        display: none;
+    .contact-info h4 {
+        font-size: 25px;
     }
+
+    .contact-info p {
+        font-size: 18px;
+    }
+
+    .quick-links li {
+        font-size: 18px;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+
+    .part1 h3 {
+        font-size: 30px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    .c {
+        margin-left: 0%;
+        display: block;
+    }
+.container h1{
+    padding-top: 10px;
+}
+    .image-container p {
+        margin-left: 0%;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .img {
+        margin: auto;
+    }
+
+    .img img {
+        width: 200px;
+        height: 200px;
+    }
+
 
     .emailcontainer {
         display: flex;
@@ -463,12 +789,274 @@ h1 {
 
     }
 
+    .partchef h1 {
+        font-size: 30px;
+    }
+
+   
+
+    .faq-item {
+        width: 100%;
+    }
+
+    .question {
+        height: 40px;
+    }
+
+    .q {
+        font-size: 15px;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .container {
+        margin: 0%;
+        width: 95%;
+        padding: 0px;
+    }
+
+    .answer {
+        font-size: 10px;
+    }
+.content{
+    display: none;
+}
+.part1 {
+    width: 100%;
+    height: 800px
 }
 
-@media screen and (max-width:700px) {
-    * {
-        margin: 0px;
+.part1 ul {
+    display: block;
+}
+.part1 li {
+    font-size: 25px;
+    display: block;
+}
+
+
+
+.h li {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: none;
+    font-size: 25;
+    margin-bottom: 10px
+}
+
+.h {
+    display: none;
+    margin-bottom: 50px;
+    margin-left: 15rem;
+}
+
+.contact {
+
+    width: 100px;
+    height: 50px;
+    background-color: #FF7415;
+    border: 0px;
+    color: white;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 70px;
+    font-size: 15px;
+}
+
+.contact button {
+    margin-left: 0;
+}
+.part1,
+    .menu,
+    .m,
+    .title {
+        width: 100%;
+    }
+
+    .h {
+        width: fit-content;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+
+    .prev,
+    .next {
+        color: orange;
+        font-size: 10px;
+        top: 37%;
+    }
+
+    .next {
+        margin-left: 90%;
+    }
+
+   
+
+    .content123 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .namechef h2 {
+        font-size: 15px;
+    }
+
+    .chef {
+        height: 500px;
+    }
+
+    .container61 {
+        font-size: 18px;
+        display: block;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .email-input {
+        width: 50%;
+        height: 50px;
+        font-size: 15px;
         padding: 0px;
+        margin: 0%;
+    }
+
+    .subscribe-button {
+        width: 40%;
+        height: 50px;
+        font-size: 15px;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .container61 {
+        margin-top: 30px;
+    }
+
+    .about-us,
+    .opening-hours,
+    .contact-info,
+    .quick-links {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    .about-us h4,
+    .opening-hours h4,
+    .contact-info h4,
+    .quick-links h4 {
+        font-size: 20px;
+    }
+
+    .chef .title {
+        font-size: 20px;
+    }
+    .part1{
+        height: 600px;
+    }
+    .about-us p {
+        font-size: 18px;
+        width: 90%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mission1 h2 {
+        font-size: 30px;
+        margin-top: 2%;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .opening-hours p {
+        font-size: 18px;
+    }
+
+    .contact-info h4 {
+        font-size: 25px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+    }
+
+    .quick-links li {
+        font-size: 18px;
+    }
+
+   
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    .c {
+        margin-left: 0%;
+        display: block;
+    }
+
+    .image-container p {
+        margin-left: 0%;
+        text-align: left;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .img {
+        margin: auto;
+    }
+
+    .img img {
+        width: 250px;
+        height: 250px;
+    }
+
+   
+
+    .emailcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .partchef h1 {
+        font-size: 30px;
+    }
+
+    .mission {
+        height: 400px;
+    }
+
+
+    .title {
+        margin-left: 0%;
     }
 
     .faq-item {
@@ -476,31 +1064,27 @@ h1 {
     }
 
     .question {
-        height: 50px;
+        height: 40px;
     }
 
     .q {
-        font-size: 20;
+        font-size: 15px;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .container {
+        margin: 0%;
+        width: 95%;
+        padding: 0px;
     }
 
     .answer {
-        font-size: 15;
+        font-size: 10px;
     }
 
-
-}
-
-
-
-@media screen and (min-width: 700px) and (max-width: 900px) {
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    body {
-        width: 100%;
-        height: 100%;
+    .c {
+        display: flex;
     }
 
     .part1 {
@@ -513,44 +1097,54 @@ h1 {
     }
 
     .part1 h3 {
-        font-size: 100;
+        font-size: 30px;
+    }
+    .title h3 {
+        height: 20px;
     }
 
+
+
     .part1 li {
-        font-size: 35;
+        font-size: 25px;
         display: block;
     }
 
 
 
     .h li {
-        width: 100;
-        height: 100;
+        width: 50px;
+        height: 30px;
         margin-left: 0px;
-        font-size: 35;
+        font-size: 20px;
+        margin-bottom: 20px;
 
     }
 
     .h {
         display: block;
         margin-left: 600px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
-
     li .contact {
-        height: 50px;
-        width: 200px;
+        height: 30px;
+        width: 150px;
         background-color: #FF7415;
         border: 0px;
         color: white;
         margin-right: 0;
         margin-left: 0;
-        margin-bottom: 70px;
-        font-size: 25;
+        margin-bottom: 0px;
+        font-size: 20px;
     }
 
     .contact button {
         margin-left: 0;
     }
+.content{display: none;}
+.container h1{
+    padding-top: 50px;
+}
 
+    
 }
