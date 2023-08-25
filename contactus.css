@@ -197,7 +197,7 @@ button {
     }
 
     .part2 .map {
-        width: 350px;
+        width: 400px;
     }
 
     .part2 #map {
@@ -214,12 +214,37 @@ button {
         width: 100%;
         display: block;
         margin-left: 0;
+    
     }
+
+    .details {margin-left: 0; 
+    
+    }
+.details h1 {
+    font-size: 20px;
+}
+
 
     .fk img {
         display: none
     }
 
 
+ 
 
+}
+
+
+
+.details{display:flex; 
+justify-content: center;}
+h1{color: #FFA500;}
+.CHECK{   text-decoration: underline;
+    ;}
+.d1{margin-left: 5%;}  
+
+
+
+
+    
 }
