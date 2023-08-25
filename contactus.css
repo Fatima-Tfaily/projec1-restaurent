@@ -221,5 +221,13 @@ button {
     }
 
 
+ 
 
 }
+
+
+
+.details{display:flex;}
+h1{color: #FFA500;}
+.CHECK{   text-decoration: underline;
+    ;}
