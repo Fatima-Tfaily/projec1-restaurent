@@ -1,62 +1,175 @@
+*{margin:0;
+padding:0}
 .start {
     background-image: url(./IMAGES/hero_2.jpg);
     background-position: center center;
     display: block;
     height: 350px;
 }
-
-.foody {
-    color: white;
+.content1{
+    transform:skewY(-5deg);
 }
-
-.nav {
-    display: flex;
-    justify-content: center;
-    color: white;
-    flex-direction: row;
-    text-decoration: none;
-    word-spacing: 50px;
+.content2{
+    transform:skewY(5deg);
 }
-
-.nav a {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-
-
-.contactus {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    line-height: 0px;
-    margin-top: 60px;
-    font-size: 20px;
-    padding: 0;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: orange;
-    width: 130px;
-    height: 50px;
-    margin-top: -22px;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
-.getstarted {
-    position: unset;
-    margin-left: 50%;
-    margin-top: 6%;
-}
-
+.dot{height: 15px;
+    width: 15px;
+    margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;}
+.content p {
+     margin-left: 5%;
+    }
+.header {
+        width: 100%;
+        height: 500px;
+    }
+    
+.part1 {
+        color: white;
+    }
+    .part1 ul {
+        display: flex;
+        list-style-type: none;
+    }
+    .mySlides img{
+        height: 600px;
+    }
+    .header{
+        height:600px;
+    }
+    .menu {
+        padding-top: 20px;
+        margin-bottom: 70px;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .title h3{
+        padding: left;
+    }
+    .m{
+        margin: left;
+        margin-left: 0%;
+    }
+    .contact {
+        width: 100px;
+        height: 40px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .h {
+        margin-left: 400px;
+    }
+    
+    .menu li {
+        margin-right: 20px;
+    }
+    
+    .c {
+        margin-left: 120px;
+    }
+    
+    .title {
+        margin-left: 70px;
+    }
+    
+    a:hover {
+        color: #FF7415;
+    }
+    
+    .content {
+        font-size: 30px;
+        margin-top: 0px;
+    
+    }
+    
+    .part1 p {
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    
+    .get {
+        background: none;
+        border: 2px solid white;
+        color: white;
+        width: 100px;
+        height: 35px;
+        margin-top: 10px;
+    }
+    
+    .button {
+        text-align: center;
+    }
+    
+    .contact:hover {
+        background-color: white;
+        color: orange;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .menu li {
+        margin-right: 20px;
+    }
+    
+    .c {
+        margin-left: 120px;
+    }
+    
+    .title {
+        margin-left: 70px;
+    }
+    
+    a:hover {
+        color: #FF7415;
+    }
+    
+    .content {
+        font-size: 25;
+        margin-top: 0px;
+    
+    }
+    
+    .part1 p {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+    .part1 h1 {
+        text-align: center;
+    }
+    
+    .get {
+        background: none;
+        border: 2px solid white;
+        color: white;
+        width: 100px;
+        height: 35px;
+        margin-top: 10px;
+    }
+    
+    .get:hover {
+        background-color: white;
+        color: black;
+    }
+ .mySlides img{
+    height: 600px;
+ }   
 
 #name {
     font-size: x-large;
@@ -169,8 +282,25 @@ button {
     width: 650px;
 
 }
-
-@media screen and (max-width: 800px) {
+.details{
+    display:flex;
+}
+.d1 h1,.d2 h1{
+    color:#FFA500;
+} 
+.d1{
+    margin-left:20%;
+    margin-right: 10%;
+}
+.content{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.content h1{
+    width:50%;
+    margin: auto;
+}
+@media screen and (max-width: 700px) {
 
     .start .getstarted {
         position: unset;
@@ -178,12 +308,82 @@ button {
         margin-top: 23.5%;
         cursor: pointer;
     }
+    .header {
+        height: 500px;
+    }
+.mySlides img{
+    height: 500px;
+}
+
+    .part1 h3 {
+        font-size: 30px;
+    }
+    .content{
+        display: none;
+    }
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+    
+    .part1 ul {
+        display: block;
+    }
+    .part1 li {
+        font-size: 25px;
+        display: block;
+    }
+    
+    
+    
+    .h li {
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+        margin-right: none;
+        font-size: 25;
+        margin-bottom: 10px
+    }
+    
+    .h {
+        display: none;
+        margin-bottom: 50px;
+        margin-left: 15rem;
+    }
+    
+    .contact {
+    
+        width: 100px;
+        height: 50px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 70px;
+        font-size: 15px;
+    }
+    
+    .contact button {
+        margin-left: 0;
+    }
+    .part1,
+        .menu,
+        .m,
+        .title {
+            width: 100%;
+        }
+    
+        .h {
+            width: fit-content;
+        }
+
 
 }
 
 @media (max-width:800px) {
     .part2 {
-        margin-top
+        margin-top:;
     }
 
 
@@ -209,7 +409,7 @@ button {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .Reservation {
         width: 100%;
         display: block;
@@ -232,7 +432,6 @@ button {
 
  
 
-}
 
 
 
@@ -241,10 +440,61 @@ justify-content: center;}
 h1{color: #FFA500;}
 .CHECK{   text-decoration: underline;
     ;}
-.d1{margin-left: 5%;}  
-
-
-
-
+.d1{margin-left: 5%;}  }
+@media screen and (min-width: 700px) and (max-width: 900px) {
     
-}
+    .part1 {
+        width: 100%;
+        height: 800px
+    }
+
+    .part1 ul {
+        display: block;
+    }
+
+    .part1 h3 {
+        font-size: 30px;
+    }
+    .title h3 {
+        height: 20px;
+    }
+
+
+
+    .part1 li {
+        font-size: 25px;
+        display: block;
+    }
+
+
+
+    .h li {
+        width: 50px;
+        height: 30px;
+        margin-left: 0px;
+        font-size: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .h {
+        display: block;
+        margin-left: 600px;
+        margin-bottom: 10px;
+    }
+    li .contact {
+        height: 30px;
+        width: 150px;
+        background-color: #FF7415;
+        border: 0px;
+        color: white;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .contact button {
+        margin-left: 0;
+    }
+.content{display: none;}}
