@@ -43,7 +43,7 @@ a {
 }
 
 .h {
-    margin-left: 1250px;
+    margin-left: 400px;
 }
 
 .menu li {
@@ -57,7 +57,12 @@ a {
 .title {
     margin-left: 70px;
 }
-
+.header{
+    height: 600px;
+}
+.mySlides img{
+    height:600px;
+}
 a:hover {
     color: #FF7415;
 }
@@ -94,7 +99,6 @@ a:hover {
     margin-left: 20px;
 
 }
-
 
 .menu1 {
     background: linear-gradient(rgba(0, 0, 0, 0.3)100%, rgba(0, 0, 0, 0.3)100%), url("IMAGES/special-menu1.jpg");
@@ -191,7 +195,7 @@ a:hover {
 }
 
 .t3 img {
-    width: 350px;
+    width: 200px;
     height: 200px;
 }
 
@@ -218,7 +222,6 @@ h1 {
 .paragraph {
     width: 400px;
     color: gray;
-    margin-left: 5%;
 }
 
 footer img {
@@ -256,50 +259,8 @@ footer {
 }
 
 .container {
-    display: flex;
+    display: block;
     justify-content: center;
-    height: 400px;
-    transform: skewY(-5deg);
-    transform-origin: top left;
-}
-.slider-container {
-    position: relative;
-    width: 100%;
-    
-    
-    
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.co {
-    flex: 0 0 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-}
-
-.prev-arrow,
-.next-arrow {
-    position: absolute;
-    top: 50%;
-   
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.prev-arrow {
-    left: 0;
-}
-
-.next-arrow {
-    right: 0;
 }
 
 .c img {
@@ -444,21 +405,6 @@ hr {
 
 
 }
-@keyframes popIn {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  /* Apply the animation to all images in the image-container */
-  .image-container img {
-    animation: popIn 4s ease-in-out forwards;
-  }
 
 .image-container {
     display: flex;
@@ -474,7 +420,7 @@ hr {
 .image-container {
     display: inline-flex;
     justify-content: center;
-    margin-left: 31%;
+    margin-left: 25%;
     margin-top: 40px;
 }
 
@@ -583,7 +529,6 @@ hr {
 .container61 {
     display: flex;
     margin-top: 20px;
-    margin-left: 25%;
 }
 
 .container61 p {
@@ -596,9 +541,10 @@ hr {
 }
 
 .container {
+    width: 100%;
     justify-content: space-between;
     margin-top: 100px;
-    margin-right: 50px;
+    margin-right: 0px;
     transform: skewY(-5deg);
     transform-origin: top left;
 }
@@ -606,6 +552,8 @@ hr {
 .co {
     transform: skewY(5deg);
     transform-origin: top left;
+    width:100%;
+    height:500px;
 }
 
 .opening-hours {
@@ -643,7 +591,7 @@ hr {
 }
 
 .men {
- margin-left: 25%;
+    margin-left: 10%;
     padding-top: 20px;
     margin-bottom: 70px;
 }
@@ -692,7 +640,6 @@ h2 {
     width: 100%;
     margin-top: 30px;
     height: 700px;
-    margin-left: 2%;
 }
 
 
@@ -758,13 +705,7 @@ body {
     padding-top: 50px;
 
 }
-.container{
-    width: 100%;
-}
-.container .p{
-    justify-content: center;
-    text-align: center;
-}
+
 
 
 img {
@@ -775,12 +716,6 @@ img {
 
 .t3 p {
     color: #999DA0;
-    margin-left: 80px;
-    text-align:center;
-}
-.t3 h4{
-    text-align: center;
-    margin-left:35% ;
 }
 
 .t3 .p {
@@ -819,96 +754,9 @@ img {
 .newsletter {
     text-align: left;
 }
-
-.testimonial-slider {
-    position: relative;
-    overflow: hidden;
-    margin: auto;
-    width: 80%;
+.quick-links a{
+    color:#FF7415;
 }
-
-.container-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 1500px;
-}
-
-
-.container {
-    flex: 0 0 100%;
-    
-}
-
-.prev-button,
-.next-button {
-    position: relative;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color:orange;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    margin-top: 5%;
-}
-.prev-button {
-    left: 0; /* Position at the left side */
-    margin-left: 15px;
-}
-
-.next-button {
-    right: 0; /* Position at the right side */
-    margin-left: 40px;
-    width: 80px;
-    
-
-}
-.modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 25%;
-    transform: translate(-50%,-50%);
-    
-    
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensure modals appear above other content */
-}
-
-/* Style for the modal content */
-.modal-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-/* Style for the close button */
-#close-error-modal,
-#close-success-modal {
-    margin-top: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    cursor: pointer;
-}
-
-.up{
-    justify-content: center;
-}
-
-.next-button {
-right: 22;
-}
-
 @media screen and (max-width: 700px) {
     * {
         padding: 0;
@@ -922,7 +770,7 @@ right: 22;
 
     .p4 {
         width: 100%;
-        height: 4500px;
+        height: 2500px;
         font-size: 35;
     }
 
@@ -986,15 +834,18 @@ right: 22;
     }
 
     .Blog {
+        width: 100%;
         display: block;
     }
 
     .blog {
+        width: 100%;
         margin-bottom: 0px;
         height: fit-content;
     }
 
     .P5 {
+        width: 100%;
         height: 1400px;
         padding: center;
     }
@@ -1120,25 +971,6 @@ right: 22;
         font-size: 25;
         margin-bottom: 10px
     }
-.container{
-    height: 500px;
-}
- .prev-button{
-    padding: 5px;
-    top:550px;
-}
-.next-button{
-    padding: 5px;
-    top:550px;
-}
-.co{
-    height: 550px;
-    width: 500px;
-    
-}
-.container{}
-
-
 
     .h {
         display: none;
@@ -1401,7 +1233,10 @@ right: 22;
 
     .quick-links li {
         font-size: 20px;
-    }}
+    }
+.part5,.P5,.blog{
+    width:100%;
+}}
 
 @media screen and (min-width: 700px) and (max-width: 900px) {
     * {
@@ -1890,7 +1725,5 @@ right: 22;
     .quick-links h4 {
         font-size: 20px;
     }
-   .testimonial-slider{
-    display: none;
-   }
-}
+
+}*/

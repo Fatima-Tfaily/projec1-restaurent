@@ -8,10 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const emailValue = emailInput.value.trim();
 
       if (!isValidEmail(emailValue)) {
-          errorModal.style.display = "block";
+          alert('email invalid!');
       } else {
-          successModal.style.display = "block";
-          emailInput.value = "";
+          alert('email valid!');
       }
   });
 
